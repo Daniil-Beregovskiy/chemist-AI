@@ -1,0 +1,10 @@
+def func( *args ):
+    mas = []
+    for x in range(len(args[0])):
+        mas.append(0)
+    for vector in args:
+        for x in range(len(vector)):
+            mas[x] = mas[x] + vector[x]
+    for x in range(len(mas)):
+        mas[x] = mas[x] / len(args)
+    return mas
